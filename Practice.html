@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- This declares that the document is an html document. All pages should begin with this statement -->
+<html lang="en">
+    <!-- You can specify the language of your page by using the lang attribute on the opening html tag -->
+    <head>
+        <meta charset="utf-8">
+        <!-- The meta element sets the browser behaviour. In this specific meta element, it tells the browser how to encode characters for the page -->
+        <!-- The head element is used to store metadata that is not displayed on the page -->
+        <!-- Examples of metadata are page title, links to stylesheets, and scripts -->
+        <title>Practice HTML</title>
+        <!-- The title element shows what to display as the title on the page tab -->
+    </head>
+    <body>
+        <main>
+            <!-- This is how a comment is made in HTML -->
+            <!-- HTML has an opening <p> and closing tag </p> -->
+            <!-- The contents is written between the tags -->
+
+
+            <!-- 1. Headings -->
+            <!-- Headings are labeled by number for its size and importance -->
+            <h1>H1 is the biggest heading</h1>
+            <h2>H2 is the second biggest heading</h2>
+            <h3>H3 is the third biggest heading</h3>
+            <h4>H4 is the third smallest heading</h4>
+            <h5>H5 is the second smallest heading</h5>
+            <h6>H6 is the smallest heading</h6>
+
+            <!-- 2. Paragraph -->
+            <!-- A paragraph is normal text. The contents of your heading -->
+            <p>This is how you make a paragraph</p>
+
+            <!-- 3. Main element -->
+            <!-- The main element is used to identify the main contents of an HTML file -->
+            <!-- <main> -->
+                <h1>Just pretend this is a normal heading</h1>
+                <p> Just pretend this is a normal paragraph</p>
+                <!-- The inside of a main element should be indentated once -->
+            <!-- </main> -->
+            <!-- Elements inside the main elements are nested elements. This is called nesting -->
+            <!-- To indicate that an element is nested, you need to add 2 spaces before the element -->
+
+            <!-- 4. Images -->
+            <!-- To add images, we use an element called img -->
+            <!-- The image element is a void element which has no opening or closing tag-->
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+            <!-- The src is an attribute which is add ons to elements -->
+            <!-- The src attribute needs to be filled with the link to the image -->
+            <!-- The alt attribute is a text that will be displayed if the image fails to load -->
+
+            <!-- 5. Links -->
+            <!-- To add links, we use this element -->
+            <a href="https://freecatphotoapp.com">Cat photo app</a>
+            <!-- The href attribute provides the link -->
+            <!-- The text between the elements are how the link is displayed -->
+            <!-- The link would be displayed as a blue underlined "Cat photo app" text that is clickable -->
+
+            <!-- You can nest links in <p> elements -->
+            <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
+            <!-- By adding target="_blank", you will open the link in a new tab -->
+            <!-- You can even turn images into links by wrapping it in an anchor element -->
+
+            <!-- 6. Sections -->
+            <!-- You can use the section element to identify sections in your documents -->
+            <section>
+                <h2>Pretend this is a heading</h2>
+                <p>Pretend this is the contents of the heading</p>
+                <p>Why do I always typo when typing pretend?</p>
+            </section>
+
+            <!-- 7. Unordered lists -->
+            <!-- The ul element is used to create unordered lists -->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <!-- 8. FIgure -->
+            <!-- The figure element represents self-contained content and will allow you to associate an image with a caption -->
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna</figcaption>
+            </figure>
+            <!-- To add the caption, we use the figcaption element -->
+            <!-- To add an emphasis to a word, you can wrap it with the <em> element -->
+
+            <!-- 9. Ordered list -->
+            <!-- To create an ordered list, you can use the <ol> element -->
+            <ol>
+                <li>I love coding</li>
+                <li>I love HTML</li>
+                <li>I love this practice document</li>
+            </ol>
+
+            <!-- 10. Text formatting -->
+            <!-- A. Strong -->
+            <!-- The strong element makes your text bold -->
+            <p>I <strong>hate</strong> boring classes.</p>
+            <!-- B. Em -->
+            <!-- Em (emphasis) makes text italic and gives it emphasis -->
+            <p>I <em>fancy</em> your way of writing.</p>
+
+            <!-- 11. Form -->
+            <!-- The form element is used to get information from the user -->
+            <form action="Practice.html">
+                <!-- The action attribute indicates where the form data is going to be sent to -->
+                <fieldset>
+                    <legend>How is your experience using html?</legend>
+                    <!-- A legend is a caption for a fieldset -->
+                    <label><input type="radio" id="positive" name="htmlexperience" value="positive"> Positive </label>
+                    <!-- This creates a radio button with the text good -->
+                    <!-- A radio button is like a checkmark -->
+                    <!-- The label element is used to make the button work even if the user pressed the 'Positive' text -->
+                    <!-- The id attribute is used to differentiate an element from another -->
+                    <!-- The value attribute is what gets sent to the server when the radio button is checked -->
+                    <label><input type="radio" id="negative" name="htmlexperience" value="negative"> Negative </label>
+                </fieldset>
+                <fieldset>
+                    <legend>How would you describe your experience?</legend>
+                    <input type="checkbox" id="problematic" name="experiencedescription"> <label for="problematic">Problematic</label>
+                    <!-- You can also do this to associate a text with an input element -->
+                    <input type="checkbox" id="successful" name="experiencedescription"> <label for="successful">Successful</label>
+                    <!-- A checkbox is something that can have multiple elements selected -->
+                    <input type="checkbox" checked id="calm" name="experiencedescription"> <label for="calm">Calm</label>
+                    <!-- The checked attribute makes the button checked by default -->
+                    <input type="checkbox" id="satisfying" name="experiencedescription"> <label for="satisfying">Satisfying</label>
+                </fieldset>
+                <!-- A fieldset is just like a section element. It makes the elements in it appear on a new line -->
+                <input type="text" name="htmlthoughts" placeholder="Your thoughts on HTML" required>
+                <!-- The input elements provides several ways to get data from the user -->
+                <!-- The type attribute specifies what type of data the input is accepting -->
+                <!-- The name attribute represents what the data is. Basically giving it a name -->
+                <!-- The placeholder attribute gives users a hint on what to put in a form -->
+                <!-- To make sure the user doesn't leave it blank, we use the required attribute, which doesn't need a value assigned to it -->
+                <button type="submit">Submit</button>
+                <!-- This creates a button with the text 'submit' in it -->
+                <!-- The type attribute makes it clear that it is a submit button -->
+                <!-- The input and button elements appear in the same line because they are inline elements -->
+            </form>
+        </main>
+        <footer>
+            <!-- The footer element is to identify which parts of the page is the footer -->
+            <!-- It ususally stores information about the author, copyright, and contact info -->
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freecodecamp.org</a></p>
+        </footer>
+    </body>
+</html>
