@@ -15,8 +15,8 @@
         <!-- The title element shows what to display as the title on the page tab -->
     </head>
     <body>
-        <div id="maincontent">
-            <main>
+        <main>
+            <div id="maincontent">
                 <!-- This is how a comment is made in HTML -->
                 <!-- HTML has an opening <p> and closing tag </p> -->
                 <!-- The contents is written between the tags -->
@@ -105,7 +105,8 @@
                 <!-- B. Em -->
                 <!-- Em (emphasis) makes text italic and gives it emphasis -->
                 <p>I <em>fancy</em> your way of writing.</p>
-
+            </div>
+            <div class="form">
                 <!-- 11. Form -->
                 <!-- The form element is used to get information from the user -->
                 <form action="Practice.html">
@@ -143,8 +144,19 @@
                     <!-- The type attribute makes it clear that it is a submit button -->
                     <!-- The input and button elements appear in the same line because they are inline elements -->
                 </form>
-            </main>
-        </div>
+            </div> 
+            <div class="csspractice">
+                <!-- The elements inside of this div element is used for CSS practice only -->
+                 <article class="item">
+                    <p>Wrench</p>
+                    <p>3.00</p>
+                 </article>
+                 <article class="thing">
+                    <p class="name">watch</p><p class="price">1.00</p>
+                    <!-- When p elements are placed next to each other with no spaces between them, they behave like inline elements -->
+                 </article>
+            </div>
+        </main>
         <!-- The div element is usually used for styling purposes. It is different from the other content elements -->
         <footer>
             <!-- The footer element is to identify which parts of the page is the footer -->
