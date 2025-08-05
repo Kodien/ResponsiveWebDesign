@@ -44,4 +44,34 @@ h1, h2, h3 {
 .price {
     width: 25%;
 }
-
+.mathexam {
+    font-style: italic;
+    /* The font-style property changes your text's format */
+    font-size: 18px;
+    /* The font-size property sets how big your text is */
+    margin-top: -1px;
+    /* You can set negative values to margin properties */
+}
+hr {
+    height: 3px;
+    /* This sets the hr's height */
+    background-color: aliceblue;
+    border-color: aliceblue;
+    /* The border-color property sets the color of the edges of an element */
+}
+a {
+    color: black;
+    /* The color property sets the color of the text with the link. So it will be black instead of blue */
+}
+a:visited {
+    /* This is called a pseudo-selector, this one in specific changes the color of the link to grey once it has been visited */
+    color: grey;
+}
+a:hover {
+    /* This pseudo-selector changes the color of the link to brown when the mouse touches the link */
+    color: brown;
+}
+a:active {
+    /* This pseudo-selector changes the color of the link to white when it's clicked */
+    color: white;
+}
