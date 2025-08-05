@@ -75,3 +75,47 @@ a:active {
     /* This pseudo-selector changes the color of the link to white when it's clicked */
     color: white;
 }
+.marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+    /* You can add a value before auto for the margin property to give the element at least that value of space around it */
+}
+.one {
+    background-color: rgb(43, 98, 32);
+    /* You can use the rgb function to select colors using the rgb scale */
+    /* The maximum value for each color is 255 */
+    /* The rgb function uses the primary colors in which if combined, will make white */
+    /* A secondary color is produced if 2 of the primary colors has the value 255 and the other one has the value of 0 */
+    /* A tertiary color is the combination of a primary color at its max value and another on half of its value with the other one at 0 */
+}
+.two {
+    background-color: #00FF00;
+    /* This is the hexadecimal scale. 00 means 0% and FF means 100% of that color */
+    /* This is the more common way to specify a color in CSS */
+}
+.three {
+    background-color: hsl(240, 100%, 50%);
+    /*The HSL color model, or hue, saturation, and lightness, is another way to represent colors.
+
+    The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.
+
+    Saturation is the intensity of a color from 0 to 100%. You must add the percent sign % to the saturation and lightness values.
+
+    Lightness is how bright a color appears, from 0%, complete black, to 100%, complete white, with 50% being neutral. */
+}
+.container {
+    background-color: rgb(123, 24, 113);
+    padding: 10px 0;
+    /* The first value will be used for the top and bottom padding, while the next is used for left and right padding */
+    /* This also applies to the margin property */
+}
+/* COLOR THEORY FROM FREECODECAMP */
+
+/* Complementary colors are colors that are on the opposite sides of the color wheel */
+/* Placing them side by side can create the accent to attract the viewer's eyer */
+/* This can be used when you want to attract the viewer's eyes to something in your website */
+
+/* When designing your website, use one dominant color, and add another color (like red for example) to contrast */
+/* You can use this color to attract viewer's eyes to important buttons and headings */
+
