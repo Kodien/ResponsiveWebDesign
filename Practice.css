@@ -105,7 +105,13 @@ a:active {
     Lightness is how bright a color appears, from 0%, complete black, to 100%, complete white, with 50% being neutral. */
 }
 .container {
-    background-color: rgb(123, 24, 113);
+    background: linear-gradient(90deg, #22333B 0%, #EAE0D5 100%);
+    /* We can set gradients in our colors using the linear-gradient function */
+    /* It accepts the direction of the gradient as its first value, and 2 colors to gradient */
+    /* Keep in mind that you can add more than 2 colors */
+    /* The 50% acts as a color stop. It sets where a color starts in a gradient (and sometimes ends. 0%, starts at the beginning, 100%, starts at the end */
+    /* Of course you can use HEX and hsl too to set the colors */
+    /* The default gradient direction is 180 degrees */
     padding: 10px 0;
     /* The first value will be used for the top and bottom padding, while the next is used for left and right padding */
     /* This also applies to the margin property */
