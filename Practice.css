@@ -75,7 +75,7 @@ a:active {
     /* This pseudo-selector changes the color of the link to white when it's clicked */
     color: white;
 }
-.marker {
+.marker, .randombox{
     height: 25px;
     width: 200px;
     margin: 10px auto;
@@ -93,6 +93,8 @@ a:active {
     background-color: #00FF00;
     /* This is the hexadecimal scale. 00 means 0% and FF means 100% of that color */
     /* This is the more common way to specify a color in CSS */
+    opacity: 0.5;
+    /* The opacity property sets how transparent an element is */
 }
 .three {
     background-color: hsl(240, 100%, 50%);
@@ -116,6 +118,27 @@ a:active {
     /* The first value will be used for the top and bottom padding, while the next is used for left and right padding */
     /* This also applies to the margin property */
 }
+.cursed {
+    background: rgba(20, 24, 242, 0.5);
+    /* The a in the back of the rgba function stands for alpha channel */
+    /* It accepts a value from 0 to 1 for the transparency of the element */
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black;
+    /* In CSS, we can control every side of the border */
+    /* The border-style property sets how the border looks (e.g. solid line, dotted lines, etc.) */
+    border-right: 10px solid black;
+    /* Or, you can use the border-side function that accepts 3 of those values in 1 function */
+    box-shadow: 5px 5px 5px 0 grey
+    /* The box-shadow property creates a shadow below a box */
+    /* The first 5px is used to move the shadow right */
+    /* The second 5px is used to move the shadow down */
+    /* The third 5px is the blurRadius, the greater the value, the greater the blur is */
+    /* The 0 is the spreadRadius it creates a shadow all around the element */
+    /* You can use negative values to move the shadow to the opposite direction */
+} 
+
+
 /* COLOR THEORY FROM FREECODECAMP */
 
 /* Complementary colors are colors that are on the opposite sides of the color wheel */
