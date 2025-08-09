@@ -1,80 +1,3 @@
-/* This is what a comment looks like in CSS */
-
-body {
-    font-family: sans-serif, Impact;
-    /* The font-family property sets the font for the text in the element you select */
-    /* The body will use the Impact font if the sans-serif font is not found */
-}
-h1, h2, h3 {
-    /* You can select multiple HTML elements in a single CSS selector */
-    text-align: center;
-    /* The text-align property sets the alignment of your text */
-}
-#maincontent {
-    /* To select the id of an element, you use a # before the id name */
-    max-width: 500px;
-    /* The max-width property sets the max width for the page, making sure it doesn't get too wide */
-    width: 80%;
-    /* The width property sets the width of the page. This width property sets the width of the main content to 80% of the page */
-    background-color: beige;
-    /* The background-color property changes the background color of your page */
-    margin-left: auto;
-    margin-right: auto;
-    /* These margin elments sets whether your elements will be on the right, left, or center */
-    /* Since we are using auto on both margins, the element will be in the center of the page */
-    padding-left: 20px;
-    padding-right: 20px;
-    /* The padding properties give space for elements that are aligned to the side of the page */
-}
-.form {
-    /* The class selector is more commonly used. We used the dot to select an element with a class */
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-    /* The background-image property sets the background image.
-       It has a url attribute to submit the image's url */
-    
-}
-.item p {
-    /* This selects all the p elements inside of item class */
-    display: inline-block;
-    /* This makes the p elements behave like inline elements */
-}
-.name {
-    width: 75%;
-}
-.price {
-    width: 25%;
-}
-.mathexam {
-    font-style: italic;
-    /* The font-style property changes your text's format */
-    font-size: 18px;
-    /* The font-size property sets how big your text is */
-    margin-top: -1px;
-    /* You can set negative values to margin properties */
-}
-hr {
-    height: 3px;
-    /* This sets the hr's height */
-    background-color: aliceblue;
-    border-color: aliceblue;
-    /* The border-color property sets the color of the edges of an element */
-}
-a {
-    color: black;
-    /* The color property sets the color of the text with the link. So it will be black instead of blue */
-}
-a:visited {
-    /* This is called a pseudo-selector, this one in specific changes the color of the link to grey once it has been visited */
-    color: grey;
-}
-a:hover {
-    /* This pseudo-selector changes the color of the link to brown when the mouse touches the link */
-    color: brown;
-}
-a:active {
-    /* This pseudo-selector changes the color of the link to white when it's clicked */
-    color: white;
-}
 .marker, .randombox{
     height: 25px;
     width: 200px;
@@ -136,8 +59,7 @@ a:active {
     /* The third 5px is the blurRadius, the greater the value, the greater the blur is */
     /* The 0 is the spreadRadius it creates a shadow all around the element */
     /* You can use negative values to move the shadow to the opposite direction */
-} 
-
+}
 
 /* COLOR THEORY FROM FREECODECAMP */
 
@@ -147,4 +69,3 @@ a:active {
 
 /* When designing your website, use one dominant color, and add another color (like red for example) to contrast */
 /* You can use this color to attract viewer's eyes to important buttons and headings */
-
