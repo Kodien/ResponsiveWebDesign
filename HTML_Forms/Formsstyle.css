@@ -2,5 +2,13 @@ body {
     width: 100%;
     height: 100vh;
     /* vh stands for Viewport height. Which takes x% (in this case 100% because 100vh) of the viewport's height to display your website */
-    
+    background-color: beige;
+    color: hsl(220, 80%, 20%);
+    margin: 0;
+}
+label {
+    display: block;
+    margin: 0.5rem 0; /* The first value is for top and bottom, and the second is for left and right */
+    /* rem stands for root em. It is based on the html element's font size. */
+    /* For example if a <p> element has the font size of 16px, 1 rem = 16px */ 
 }
