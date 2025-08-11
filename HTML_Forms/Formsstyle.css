@@ -5,6 +5,20 @@ body {
     background-color: beige;
     color: hsl(220, 80%, 20%);
     margin: 0;
+    font-family: Tahoma;
+    /* Changes the font to Tahoma */
+    font-size: 16px;
+}
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+form {
+    width: 60vw;
+    /* vw stands for viewport width */
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
 }
 label {
     display: block;

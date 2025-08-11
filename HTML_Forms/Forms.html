@@ -12,13 +12,13 @@
             <!-- The method attribute specifies how to send the form-data to the link in the action attribute -->
             <!-- The form data can be sent via a get request (URL parameters) or a post request (request body) -->
             <fieldset>
-                <label required for="first-name">Enter Your First Name: <input id="first-name" type="text"/></label>
+                <label required for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text"/></label>
                 <!-- To associate a label and an input, you need to add a for attribute to the label and an id attribute to the input both having the same value-->
-                <label required for="last-name">Enter Your Last Name: <input id="last-name" type="text" minlength="8"/></label>
+                <label required for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" minlength="8"/></label>
                 <!-- The minlength attribute sets the minimum length of the answer a user must provide in an input element -->
-                <label required for="email">Enter Your Email: <input id="email" type="email"/></label>
+                <label required for="email">Enter Your Email: <input id="email" type="email" name="email"/></label>
                 <!-- The email type input only accepts emails containing an '@' and a '.' in the domain -->
-                <label required for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}"/></label>
+                <label required for="new-password">Create a New Password: <input id="new-password" name="password" type="password" pattern="[a-z0-5]{8,}"/></label>
                 <!-- The password type input automatically censors everything you type by making the characters look '*' -->
                 <!-- The pattern attribute, you can define a regular expression that the password must match to be valid -->
             </fieldset>
@@ -28,12 +28,30 @@
                 <label for="business-account"><input id="business-account" type="radio" name="account-type" /> Business</label>
             </fieldset>
             <fieldset>
-                <label><input type="file">Upload a profile picture: </label>
+                <label for="profile-picture">Upload a profile picture: <input type="file" id="profile-picture" name="profile-picture"/></label>
                 <!-- The file type input allows you to upload a file to answer an input element -->
-                <label><input type="number" min="13" max="120"> Input your age (years): </label>
+                <label for="age">Input your age (years): <input id="age"type="number" min="13" max="120" name="age"/></label>
                 <!-- The number type input only accepts numbers, which has a min and max attribute that you can tweak -->
+                <label for="referrer">How did you hear about us?
+                <select id="referrer" name="discovery-method">
+                    <!-- The select element is a container for group of option elements -->
+                    <option value="">(select one)</option>
+                    <!-- The option element acts as a label for each dropdown option -->
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+                </label>
+                <label for="bio">Provide a bio:
+                    <!-- The textarea element allows you to submit multiple lines of text -->
+                    <textarea placeholder="I like coding on the beach..." name="bio" id="bio" rows="3" cols="30"></textarea>
+                    <!-- The initial size of the text area can be set using the rows and cols attribute -->
+                    <!-- The placeholder attribute shows a text on the textarea that will disappear when the user starts typing -->
+
+                </label>
             </fieldset>
-            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required />I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" required />I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
             <input type="submit" value="submit">
             <!-- This creates a submit button at the end of the form -->
         </form>
