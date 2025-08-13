@@ -26,3 +26,44 @@ label {
     /* rem stands for root em. It is based on the html element's font size. */
     /* For example if a <p> element has the font size of 16px, 1 rem = 16px */ 
 }
+fieldset {
+    border-bottom: 3px solid #3b3b4f;
+    border: none;
+    padding: 2rem 0;
+}
+fieldset:last-of-type {
+    /* To select the last instance of any element, you can use the last-of-type pseudo-class */
+    border-bottom: none;
+    /* In this case, we select the last fieldset of the website */
+}
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    /* The order of margins is top, right, bottom, left */
+    vertical-align: middle;
+    /* It changes the vertical position of an inline or inline-block element relative to */
+}
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    /* The color property sets the color of the text */
+}
+
+input[type="submit"] {
+    /* You can use the attribute selector like this */
+    /* In this case, we are selecting all elements that have the type attribute set to submit */
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+}
