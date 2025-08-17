@@ -8,7 +8,7 @@
     <body>
         <h1>Registration Form</h1>
         <p>Please fill out the form with the required information</p>
-        <form action="https://register-demo.freecodecamp.org" method="post">
+        <form action="Forms.html" method="post">
             <!-- The method attribute specifies how to send the form-data to the link in the action attribute -->
             <!-- The form data can be sent via a get request (URL parameters) or a post request (request body) -->
             <fieldset>
@@ -33,15 +33,15 @@
                 <label for="age">Input your age (years): <input id="age"type="number" min="13" max="120" name="age"/></label>
                 <!-- The number type input only accepts numbers, which has a min and max attribute that you can tweak -->
                 <label for="referrer">How did you hear about us?
-                <select id="referrer" name="discovery-method">
-                    <!-- The select element is a container for group of option elements -->
-                    <option value="">(select one)</option>
-                    <!-- The option element acts as a label for each dropdown option -->
-                    <option value="1">freeCodeCamp News</option>
-                    <option value="2">freeCodeCamp YouTube Channel</option>
-                    <option value="3">freeCodeCamp Forum</option>
-                    <option value="4">Other</option>
-                </select>
+                    <select id="referrer" name="discovery-method">
+                        <!-- The select element is a container for group of option elements -->
+                        <option value="">(select one)</option>
+                        <!-- The option element acts as a label for each dropdown option -->
+                        <option value="1">freeCodeCamp News</option>
+                        <option value="2">freeCodeCamp YouTube Channel</option>
+                        <option value="3">freeCodeCamp Forum</option>
+                        <option value="4">Other</option>
+                    </select>
                 </label>
                 <label for="bio">Provide a bio:
                     <!-- The textarea element allows you to submit multiple lines of text -->
@@ -51,7 +51,7 @@
 
                 </label>
             </fieldset>
-            <label for="terms-and-conditions"><input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" required />I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" class="inline" name="terms-and-conditions" type="checkbox" required />I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
             <input type="submit" value="submit">
             <!-- This creates a submit button at the end of the form -->
         </form>

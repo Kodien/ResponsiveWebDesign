@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">A form for users to suggest improvements for our website</p>
+        <form id="survey-form">
+            <label id="name-label" for="name"> Please enter your name: <input required id="name" type="text" placeholder="Enter your full name..."></label>
+            <label id="email-label" for="email"> Please enter your Email: <input required id="email" type="email" placeholder="name@gmail.com..."></label>
+            <label id="number-label" for="age"> Please enter your age: <input id="number" type="number" min="13" max="120" placeholder="Age..."></label>
+            <label for="dropdown"> How do you hear about us? 
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">YouTube</option>
+                    <option value="2">Friends</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>How is your experience using this website?</legend>
+                <input type="radio" value="good" name="experience" id="good"><label for="good">Good</label>
+                <input type="radio" name="experience" value="bad" id="bad"><label for="bad">Bad</label>
+            </fieldset>
+            <fieldset>
+                <legend>What would be your career path for the future?</legend>
+                <input value="front-end" type="checkbox" id="front-end"><label for="front-end">Front-end developer</label>
+                <input value="back-end" type="checkbox" id="back-end"><label for="back-end">Back-end developer</label>
+                <input value="full-stack" type="checkbox" id="full-stack"><label for="full-stack">Full-stack developer</label>
+                <input value="database" type="checkbox" id="database"><label for="database">Database engineer</label>
+                <input value="other" type="checkbox" id="other"><label for="other">Other</label>
+            </fieldset>
+            <label for="further-thoughts">Describe your suggestions further here: <textarea id="further-thoughts" placeholder="Improve course organization..." rows="3" cols="30"></textarea>
+            <button id=submit>Submit</button>
+        </form>
+    </body>
+</html>
