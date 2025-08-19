@@ -57,7 +57,7 @@
     /* The first 5px is used to move the shadow right */
     /* The second 5px is used to move the shadow down */
     /* The third 5px is the blurRadius, the greater the value, the greater the blur is */
-    /* The 0 is the spreadRadius it creates a shadow all around the element */
+    /* The 0 is the spreadRadius, it creates a shadow all around the element */
     /* You can use negative values to move the shadow to the opposite direction */
 }
 
