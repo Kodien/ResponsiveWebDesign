@@ -1,0 +1,28 @@
+* {
+    /* The * selector selects all elements in the page */
+    box-sizing: border-box;
+    /* The box sizing property sets what size is modified when you set the size */
+    /* In this case, when you set the width of the element to 200px, the total width of the element is 200px including the padding and border */
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  /* The text-transform property transforms the text, this in specific will make all the characters in uppercase */
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+}

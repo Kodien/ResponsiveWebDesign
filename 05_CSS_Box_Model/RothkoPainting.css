@@ -23,6 +23,9 @@
     box-shadow: 0 0 3px 3px #efb762;
     border-radius: 9px;
     /* The border radius property rounds the edges of a border */
+    transform: rotate(-0.6deg);
+    /* The transform property with the function rotate will rotate the element */
+    /* If the rotate value is positive, it's clockwise, and the opposite also applies */
 }
 
 .two {
@@ -32,6 +35,7 @@
     margin: 0 auto 20px;
     box-shadow: 0 0 3px 3px #8f0401;
     border-radius: 8px 10px;
+    transform: rotate(0.4deg);
 }
 
 .one, .two {
@@ -47,4 +51,5 @@
     box-shadow: 0 0 5px 5px #b20403;
     border-radius: 30px 25px 60px 12px;
     /* The border radius edge order is top left, top right, bottom right, then bottom left */
+    transform: rotate(-0.2deg);
 }
