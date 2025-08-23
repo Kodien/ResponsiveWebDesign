@@ -17,14 +17,55 @@ body {
   padding: 0 7px;
 }
 
-h1 {
+.bold {
   font-weight: 800;
   /* The font-weight determines the boldness of the text */
+}
+
+header h1 {
   text-align: center;
   margin: -4px 0;
+  letter-spacing: 0.15px;
+  /* The letter-spacing property can be used to adjust the spacing between letters */
 }
 
 .divider {
   border-bottom: 1px solid #888989;
   margin: 2px 0;
+}
+
+p {
+  margin: 0;
+  display: flex;
+  /* Changes the p element to a flexbox element */
+  justify-content: space-between;
+}
+
+.large {
+  height: 10px;
+}
+
+.large, .medium {
+  background-color: black;
+  border: 0;
+}
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calories-info h2 {
+  margin: 0;
+}
+
+.left-container p {
+  margin: -5px -2px;
+  font-size: 2em;
+  font-weight: 700;
 }
