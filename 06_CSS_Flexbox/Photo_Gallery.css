@@ -42,7 +42,7 @@ body {
   /* The flex-wrap property determines how your elements behave when their container is too small */
   /* If wrap, they will wrap to the next row or column, if nowrap, the browser will prevent your elements from wrapping and shrink them if needed */
   justify-content: center;
-  /* The justify-content property determines how your items are aligned along the main axis */
+  /* The justify-content property determines how your items are aligned along the main axis, it also controls the spacing between elements */
   align-items: center;
   /* The align-items property positions the flex content along the cross axis */
   /* With your flex-direction set to row, your cross axis would be vertical */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- The charset attribute tells the browser how to encode the characters on the page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- The viewport meta makes the page look the same on any device, useful so users can access your website from any device -->
+        <meta name="description" content="An HTML and CSS quiz to test student's understanding" />
+        <!-- The description meta tells the browser the description of the page -->
+        <link rel="stylesheet" href="Quiz.css" />
+        <title>HTML/CSS Quiz</title>
+        <!-- The title element is used to tell screen readers about the content of the page -->
+
+    </head>
+    <body>
+        <!-- Writing structured Semantic HTML helps users understand your page layout and makes it look more pleasing -->
+        <header>
+            <!-- Introduces the page and provide a navbar -->
+            <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+            <h1>HTML/CSS Quiz</h1>
+            <nav>
+                <ul>
+                    <li><a href="#student-info">INFO</a></li>
+                    <!-- This takes you to the element with a student-info id -->
+                    <li><a href="#html-questions">HTML</a></li>
+                    <!-- To specify an id, you use a # -->
+                    <li><a href="#css-questions">CSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- The main content of the page -->
+            <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+                <section role="region" aria-labelledby="student-info">
+                    <!-- The role attribute tells screen readers what kind of element something is or how it should be treated as -->
+                    <h2 id="student-info">Student Info</h2>
+                </section>
+                <section role="region" aria-labelledby="html-questions">
+                    <!-- The aria-labelledby attribute associates an element with another element’s label for screen readers. -->
+                    <h2 id="html-questions">HTML</h2>
+                </section>
+                <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions">CSS</h2>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
