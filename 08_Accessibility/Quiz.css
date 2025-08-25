@@ -37,3 +37,23 @@ nav > ul {
     display: flex;
     justify-content: space-evenly;
 }
+
+h1,
+h2 {
+  font-family: Verdana, Tahoma;
+}
+
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  /* This is a specific set of rules that makes a text hidden so only screen readers can read it */
+}
