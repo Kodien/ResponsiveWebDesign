@@ -1,6 +1,11 @@
-* {
-  scroll-behavior: smooth;
-  /* This makes the scrolling of the page smoother for all elements, used mainly for the navbar */
+@media (prefers-reduced-motion: no-preference) {
+  /* This media query checks the user’s system accessibility settings. */
+  /* Some users set “reduce motion” in their OS (to avoid animations, dizziness, etc.). */
+  /* no-preference means the user didn’t opt out of animations → so animations & motion effects are allowed. */
+  * {
+    scroll-behavior: smooth;
+    /* This makes the scrolling of the page smoother for all elements, used mainly for the navbar */
+  }
 }
 
 body {
