@@ -1,3 +1,8 @@
+* {
+  scroll-behavior: smooth;
+  /* This makes the scrolling of the page smoother for all elements, used mainly for the navbar */
+}
+
 body {
   background: #f5f6f7;
   color: #1b1b32;
@@ -10,6 +15,10 @@ header {
   height: 50px;
   background-color: #1b1b32;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  /* This moves the element to the top edge of its container */
 }
 
 #logo {
@@ -24,7 +33,22 @@ header {
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
+  text-align: center;
 }
+
+h3::before {
+  content: "Question #";
+}
+
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+
+.answers-list {
+  list-style: None;
+  /* This property styles your list items */
+}  
 
 nav {
   width: 50%;
@@ -36,6 +60,17 @@ nav > ul {
     /* The > selector can be used to select the second selected elements that is the direct child of the first selected element */
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
 }
 
 h1,
@@ -45,6 +80,17 @@ h2 {
 
 h2 {
   border-bottom: 4px solid #dfdfe2;
+  padding-top: 60px;
+}
+
+h3 {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 1.375rem;
+}
+
+.info {
+  padding: 10px 0 0 5px;
 }
 
 .sr-only {
@@ -56,4 +102,86 @@ h2 {
   clip-path: inset(50%);
   white-space: nowrap;
   /* This is a specific set of rules that makes a text hidden so only screen readers can read it */
+}
+
+main {
+  padding-top: 50px;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav li:hover {
+  color: #1b1b32;
+  background-color: #dfdfe2;
+  cursor: pointer;
+  /* Changes the cursor to the pointer mode, the one with the index finger up and all the other fingers down */
+}
+
+li > a {
+  color: inherit;
+  /* Forces the element's text color to be the same as its parent's */
+  text-decoration: none;
+  /* Sets the text format (like italic, underline, and stuff like that) */
+}
+
+.formrow {
+  margin-top: 10px;
+  padding: 0 10px 0 10px;
+}
+
+input {
+  font-size: 16px;
+}
+
+.info label, .info input {
+  display: inline-block;
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
+}
+
+.info label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 1.438rem;
+  background: #d0d0d5;
+  border: 3px solid #3b3b4f;
+}
+
+footer {
+  background-color: #2a2a40;
+  display: flex;
+  justify-content: center;
+}
+
+footer, footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
 }
