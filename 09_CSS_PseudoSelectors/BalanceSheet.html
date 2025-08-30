@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Balance Sheet</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>
+                    <span class="flex">
+                        <span>AcmeWidgetCorp</span>
+                        <span>Balance Sheet</span>
+                    </span>
+                </h1>
+                <div id="years" aria-hidden="true">
+                    <!-- The aria-hidden attribute hides an element from a screen reader so it doesn't get announced -->
+                    <span class="year">2019</span>
+                    <span class="year">2020</span>
+                    <span class="year">2021</span>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <!-- Defines a table container that organizes data into rows and columns -->
+                        <caption>Assets</caption>
+                        <!-- Provides a title or description for the table, displayed above it by default -->
+                        <thead>
+                            <!-- Groups the header rows of the table (usually column labels) -->
+                            <tr>
+                                <!-- Defines a single row within a table -->
+                                <td></td>
+                                <!-- Defines a standard data cell inside a row -->
+                                <th><span class="sr-only year">2019</span></th>
+                                <!-- Defines a header cell (bold, centered by default, and often used in <thead>) -->
+                                <th><span class="sr-only year">2020</span></th>
+                                <th class="current"><span class="sr-only year">2021</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Groups the main body rows of the table (the actual data) -->
+                        </tbody>
+                    </table>
+                    <table>
+                    </table>
+                    <table>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
