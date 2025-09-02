@@ -1,0 +1,172 @@
+span[class~="sr-only"] {
+    /* This selects span elements that includes the class sr-only in their class attribute */
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    /* The clip property is used to define the visible portions of an element */
+    clip-path: inset(50%) !important;
+    /* The clip-path property defines the shape that the clip property should take */
+    height: 1px !important;
+    /* The important selector gives this rule the highest priority, which means this rule will always win if there's conflicting rules */
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
+}
+
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    /* This means the elements are displayed from the bottom to top */
+    gap: 1rem;
+    }
+
+h1 .flex span:first-of-type {
+    /* This selects the first span element in your flex container */
+    font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+    /* This selects the last span element in your flex container */
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    /* This makes an element behave like relative (normal in the flow) until you scroll to a certain point */
+    z-index: 999;
+    /* Controls the stacking order of elements (which one is on top when elements overlap) */
+    /* Higher numbers will stack on top of lower numbers */
+    top: 0;
+    background: #0a0a23;
+    color: #fff;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    /* The calc function calculates the values given */
+    margin: 0 -2px;
+}
+
+#years span[class] {
+    /* This selects all the span elements with a class attribute */
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+}
+
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+span {
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    /* The border-collapse property will collapse individual cell borders into one border */
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+
+table caption {
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+}
+
+tbody td {
+    width: 100vw;
+    min-width: 4rem;
+    max-width: 4rem;
+}
+
+tbody th {
+    width: calc(100% - 12rem);
+}
+
+tr[class="total"] {
+    /* This selects tr elements whose class is only total */    
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class="total"] th {
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {
+    /* This selects tr elements whose class includes total */    
+    text-align: right;
+    padding: 0 0.25rem;
+}
+
+tr.total td:nth-of-type(3) {
+    /* This selects the 3rd td element in tr.total */
+    padding-right: 0.5rem;
+}
+
+tr.total:hover {
+    background-color: #99c9ff;
+}
+
+td.current {
+  font-style: italic;
+}
+
+tr.data {
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th {
+  text-align: left;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+}
+
+tr.data th .description {
+  display: block;
+  font-weight: normal;
+  font-style: italic;
+  padding: 1rem 0 0.75rem;
+  margin-right: -13.5rem;
+}
+
+tr.data td {
+    vertical-align: top;
+    /* The vertical-align property sets the text alignment vertically */
+    padding: 0.3rem 0.25rem 0;
+    text-align: right;
+}
+
+tr.data td:last-of-type {
+  padding-right: 0.5rem;
+}
