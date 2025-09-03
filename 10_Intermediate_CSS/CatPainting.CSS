@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c9d2fc;
+}
+
+.cat-head {
+  position: absolute;
+  /* The relative value makes the element positioned according to the normal flow of the document, but the top, left, bottom, and right values become active. */
+  /* There are other positioning types like static, absolute, fixed, and sticky */
+  /* The static positioning makes an element immovable using the top, bottom, right, and left properties */
+  /* The absolute positioning takes an element out of the normal flow of the document, relying on the top, bottom, right, and left properties to position it */
+  /* The fixed positioning makes the element stay in the exact position on your screen no matter how much you scroll */
+  top: 0;
+  /* You can use the top, bottom, right, and left properties to move an element around */
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+  width: 205px;
+  height: 180px;
+  border: 1px solid #000;
+  border-radius: 46%;
+}
