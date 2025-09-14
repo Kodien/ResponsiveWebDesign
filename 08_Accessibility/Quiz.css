@@ -42,6 +42,7 @@ h1 {
 }
 
 h3::before {
+  /* The ::before pseudoselector creates an element as the first child of the selected element */
   content: "Question #";
 }
 
