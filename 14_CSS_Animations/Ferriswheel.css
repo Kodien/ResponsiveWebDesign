@@ -1,0 +1,123 @@
+.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation-name: wheel;
+    /* This determines which animation is used on this element */
+    animation-duration: 10s;
+    /* This determines how long the animation should run */
+    animation-iteration-count: infinite;
+    /* This determines how many times the animation should run */
+    animation-timing-function: linear;
+    /* This determines how your animation should progress over time */
+}
+
+.line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    /* The transform-origin property sets at which point does the transformation is applied around */
+    /* For example, if I rotate this element, it will rotate around point 0%, 0% */
+    /* This example of the property means 0% from the left and 0% from the top, meaning it is in the top left corner */
+}
+
+.line:nth-of-type(2) {
+    transform: rotate(60deg);
+}
+.line:nth-of-type(3) {
+    transform: rotate(120deg);
+}
+.line:nth-of-type(4) {
+    transform: rotate(180deg);
+}
+.line:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+.line:nth-of-type(6) {
+    transform: rotate(300deg);
+}
+
+.cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+    animation: cabins 10s ease-in-out infinite;
+    /* This is a shorthand property to set the 4 properties of animation all at once */
+    /* The ease-in-out tells the animation to start and end slower but get faster in the middle parts */
+}
+
+.cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+
+.cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
+
+
+@keyframes wheel {
+    /* The keyframes at selector defines the flow of your CSS animation */
+    0% {
+        transform: rotate(0deg);
+        /* This defines how the element should start the animation */
+   }
+
+   100% {
+        transform: rotate(360deg);
+        /* This defines what would happen when the animation ended */
+   }
+}
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: purple;
+  }
+
+  75% {
+    background-color: yellow;
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
